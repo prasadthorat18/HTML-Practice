@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>level- 3</title>
+    </head>
+    <body>
+        <!--1. Tabels in HTML -->
+        <table border="black"> <!-- this is not optimised bcoz bording is work of css so avoid border in html -->
+            <caption>Food Menu</caption>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+
+                <tr>
+                    <td>Frooti</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>samosa</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>chips</td>
+                    <td>20</td>
+                </tr>
+        </table>
+
+        <!--2. Semantics in tables-->
+        <table border="black">
+            <caption>Food Menu</caption>
+                <!--Table head-->
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+
+                <!--Table Body-->
+                <tbody>
+                    <tr>
+                        <td>Frooti</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>samosa</td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>chips</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+                
+        </table>
+
+        <!-- 3. Colspan and Rowspam -->
+
+        <table border="black">
+            <caption>FOOD MENU</caption>
+
+            <thead>
+                <tr>
+                    <th rowspan="2">Item</th>
+                    <th colspan="2">Price</th>
+                </tr>
+                <tr>
+                    <th>INR</th>
+                    <th>USD</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>frootie</td>
+                    <td>10</td>
+                    <td>0.12</td>
+                </tr>
+                <tr>
+                    <td>samosa</td>
+                    <td>12</td>
+                    <td>0.15</td>
+                </tr>
+                <tr>
+                    <td>chips</td>
+                    <td>15</td>
+                    <td>0.17</td>
+                </tr>
+            </tbody>
+            
+        </table>
+
+        <!--4. Practice qs.7-->
+
+        <table border="black">
+            <caption>A test Table With Merged CElls</caption>
+            <thead>
+                <tr>
+                    <th rowspan="2"></th>
+                    <th colspan="2">Avearge</th>
+                    <th rowspan="2">Red Eyes</th>
+                </tr>
+                <tr>
+                    <th>Height</th>
+                    <th>Weight</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>males</td>
+                    <td>1.9</td>
+                    <td>0.003</td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>females</td>
+                    <td>1.7</td>
+                    <td>0.002</td>
+                    <td>43%</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!--5. Form Element-->
+
+        <form action="/server">
+
+        </form>
+
+        <!-- 6. Input Element-->
+
+        <form action="/action">
+            username
+            <input type="text">
+            <br>
+            password
+            <input type="password">
+            <br>
+            number
+            <input type="number">
+            <br>
+            time
+            <input type="time">
+            <br>
+            color
+            <input type="color">
+
+        </form>
+        <hr>
+        <!--7. Placeholder and Lables-->
+
+        <form action="/action">
+
+            <div>
+                <lable for="username bitch">Username : </lable>
+                <input type="text" placeholder="Enter USername" id="username bitch">
+            </div>
+
+            <div>
+                <lable for="password bitch">Password : </lable>
+                <input type="password" placeholder="Enter Password" id="password bitch">
+            </div>
+
+            <div>
+                <lable for="age bitch">Age : </lable>
+                <input type="number" placeholder="Enter Age" id="age bitch">
+            </div>
+
+        </form>
+        <hr>
+        <!--8. Button Element-->
+
+        <button type="submit"> HEllo SUbmit</button>
+        <form action="/server">
+
+
+            <div>
+                <lable for="username bitch">Username : </lable>
+                <input type="text" placeholder="Enter USername" id="username bitch">
+            </div>
+
+            <div>
+                <lable for="password bitch">Password : </lable>
+                <input type="password" placeholder="Enter Password" id="password bitch">
+            </div>
+
+            <div>
+                <lable for="age bitch">Age : </lable>
+                <input type="number" placeholder="Enter Age" id="age bitch">
+            </div>
+
+            <button>Submit</button>
+            <button type="button"> normal nothing happens</button>
+            <button type="reset"> Reset</button>
+
+        </form>
+        <hr>
+
+        <!--Name Attribute-->
+        <form action="/action">
+
+            <div>
+                <lable for="username bitch">Username : </lable>
+                <input type="text" placeholder="Enter USername" id="username bitch" name="name_query">
+            </div>
+
+            <div>
+                <lable for="password bitch">Password : </lable>
+                <input type="password" placeholder="Enter Password" id="password bitch" name="pass_query">
+            </div>
+
+            <button>Submit</button>
+
+        </form>
+        <hr />
+
+        <form action="https://www.youtube.com/results">
+
+            <input type="text" placeholder="search here" name="search_query">
+            <button>search</button>
+
+        </form>
+        <hr>
+
+        <!--10. Practice Qs.8 -->
+
+        <form action="https://www.google.com/search">
+
+            <lable for="seachhhhhh"> GOOgle Search: </lable>
+            <input type="text" placeholder="search for google" id="seachhhhhh" name="q">
+            <button>Search google</button>
+        </form>
+        <hr>
+
+        <!--11. checkbox_Input Elements -->
+        <form action="/server.php">
+            <input type="checkbox" name="age" id="ageeee" checked >
+            <lable for="ageeee">I am 18+ </lable>
+            <button>submit</button>
+        </form>
+
+
+        <!--12. Radio-Input Elements -->
+
+        <form action="/sever.com">
+            <div>
+                <input type="radio" name="fruit" id="app" value="apple">
+                <lable for="app">Apple</lable>
+                <input type="radio" name="fruit" id="ban" value="banana">
+                <lable for="ban">Banana</lable>
+                <input type="radio" name="fruit" id="man" value="mango">
+                <lable for="man">mango</lable>
+
+                <button>Submit</button>
+            </div>
+        </form>
+
+        <hr>
+        <!-- 13. Select-Input Elements -->
+
+        <form action="/server.com">
+            <div>
+                Choose ur profession :
+                <select name="profession" id="prf">
+                    <option val="tea">Tecaher</option>
+                    <option val="stu">student</option>
+                    <option val="dev">Developer</option>
+                    <option val="clk">Clerk</option>
+                </select>
+
+                <button>submit</button>
+            </div>
+        </form>
+
+        <!-- 14. Range-Input Elements -->
+
+        <form action="/tatahukama.com">
+            <label for="vol">chooose ur volume level</label>
+            <input type="range" name="val" id="vol" min="0" max="100" step="20" value="45">
+            <button>jaama karaa</button>
+
+        </form>
+        <br><hr>
+
+        <!-- 15. TEXT AREA Tag-->
+        <form action="/serverrrr.com">
+            <label for="feed">Give your valuable feedback: </label>
+            <textarea id="feed" name="feedback" placeholder="write anything sirr"></textarea>
+            <button>submit it!</button>
+        </form>
+
+        <!-- Practice qs.9 -->
+         <form action="/server.com">
+            <div>
+                <h1>Registration form </h1>
+                <input type="text" placeholder="First Name" name="fname">
+                <input type="text" placeholder="Last Name" name="lname">
+            </div>
+            <div>
+                <label for="gen">PLease Select Gender</label>
+                <select name="gender" id="gen">
+                    <option value="ml" selected >male</option>
+                    <option value="fl">female</option>
+                    <option value="ot">Other</option>
+                </select>
+            </div>
+            <div>
+                Do You Agree all trems of services? 
+                <input type="checkbox" id="tff" name="terms" checked >
+                <label for="tff">Yes, I agree.</label>
+            </div>
+            <button>Register</button>
+         </form>
+
+         <!-- HTML level 3 QS-->
+
+         <table border="">
+            <caption>Students Information</caption>
+            <thead>
+                <tr>
+                    <th rowspan="6">Info</th>
+                    <th rowspan="2">Name</th>
+                    <th colspan="2"> Address</th>
+                </tr>
+
+                <tr>
+                    <th>city</th>
+                    <th>house</th>
+                </tr>
+            </thead>
+            <tr>
+                <td></td>
+                <td>A</td>
+                <td>Delhi</td>
+                <td>1</td> 
+            </tr>
+            <tr>
+                <td></td>
+                <td>B</td>
+                <td>Mumbai</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>C</td>
+                <td>kolkata</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>d</td>
+                <td>Pune</td>
+                <td>4</td>
+            </tr>
+         </table>
+
+         <form action="/server.com">
+            <div>
+                <lable for="namee">Name: </lable>
+                <input type="text" id="namee" placeholder="write here" name="name">
+            </div>
+            <div>
+                Sex:
+                <input type="radio" name="sex" id="sx" value="m">
+                <label for="sx">male</label>
+                <input type="radio" name="sex" id="sx" value="f">
+                <label for="sx">female</label>
+            </div>
+            <div>
+                <label for="cnt">country: </label>
+                <select name="country" id="cnt">
+                    <option value="null" selected>select an option</option>
+                    <option value="ind">India</option>
+                    <option value="pak">Pakistan</option>
+                    <option value="eng">England</option>
+                    <option value="aus">australia</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="msg">message:</label>
+                <br>
+                <textarea id="msg" name="msg"></textarea>
+            </div>
+            <div>
+                <label for="sub">subscribed?</label>
+                <input type="checkbox" name="sub?" id="sub">
+            </div>
+            <button>submit</button>
+         </form>
+         
+
+         <hr>
+         <form action="/server.com">
+
+            <h2>feedback form </h2>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="write your name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" name="email" id="email" placeholder="write your email">
+            </div>
+
+            <div>
+                <label for="feedback">Give your feedback: </label>
+                <br>
+                <textarea name="fd" id="feedback" placeholder="write your thoughts" cols="30" rows="5"></textarea>
+            </div>
+
+            <div>
+                Rate us out of 5:
+                <br>
+                <input type="radio" name="rating" value="1" id="one">
+                <label for="one">1</label>
+                <br>
+                <input type="radio" name="rating" value="2" id="two">
+                <label for="two">2</label>
+                <br>
+                <input type="radio" name="rating" value="3" id="three">
+                <label for="three">3</label>
+                <br>
+                <input type="radio" name="rating" value="4" id="four">
+                <label for="four">4</label>
+                <br>
+                <input type="radio" name="rating" value="5" id="five">
+                <label for="five">5</label>
+            </div>
+
+            <button>Send your msg!</button>
+         </form>
+    </body>
+</html>
